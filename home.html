@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focalors Rent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600&family=Kanit:wght@700&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="rent.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+    <link rel="icon" type="image/png" href="logo 1.png" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <img src="assets/logo.png" alt="Focalors Rent" />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" id="home" href="home.html"
+                    ><i class="fa-solid fa-home"></i>BERANDA</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    id="kendaraan"
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-key"></i> <br />KENDARAAN
+                  </a>
+                  <ul class="dropdown-menu" id="drop">
+                    <li>
+                      <a class="dropdown-item" href="mobil.html"
+                        ><i class="fa-solid fa-car"></i>MOBIL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="motor.html"
+                        ><i class="fa-solid fa-motorcycle"></i>MOTOR</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="status" href="status.html"
+                    ><i class="fa-solid fa-clock"></i>STATUS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="notifikasi" href="notifikasi.html"
+                    ><i class="fa-solid fa-bell"></i>NOTIFIKASI</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pengaturan" href="pengaturan.html"
+                    ><i class="fa-solid fa-gears"></i>PENGATURAN</a
+                  >
+                </li>
+                <li class="nav-item dropdown" id="user">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-user-circle"></i> <br />
+                    <input type="button" value="USER" class="user" />
+                  </a>
+                  <ul class="dropdown-menu" id="drop">
+                    <li>
+                      <a class="dropdown-item" href="login-daftar.html"
+                        ><i class="fa-solid fa-right-from-bracket"></i>LOG OUT</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+        </nav><br>
+        <!-- Navbar -->
+        <h2>Selamat Datang Di Focalors Rent</h2>
+        <!-- Carousel -->
+        <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="image/Common rental car mistakes — and how to avoid them - The Points Guy.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image/devon-janse-van-rensburg-1YGYCKdb8y4-unsplash.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image/evgeny-tchebotarev-aiwuLjLPFnU-unsplash.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+        <!-- Carousel -->
+        <h2>Promo</h2>
+        <!-- Promo -->
+        <div class="promo">
+            <div class="card mb-5" id="cardP" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-7" id="promo">
+              </div>
+              <div class="col-sm-5">
+                <div class="card-body">
+                  <p class="card-title">Promo Lebaran</p>
+                  <p class="card-text">This is a wider card with supporting text below as a natural</p>
+                  <button type="button" class="btn btn-success">Klaim</button>
+                  <p class="card-text"><small class="text-body-secondary">Berlaku Sampai 3 Juli 2023</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-5"  id="cardP" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-7" id="promo">
+              </div>
+              <div class="col-sm-5">
+                <div class="card-body">
+                  <h5 class="card-title">Promo Lebaran</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural</p>
+                  <button type="button" class="btn btn-success">Klaim</button>
+                  <p class="card-text"><small class="text-body-secondary">Berlaku Sampai 3 Juli 2023</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-5" id="cardP" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-7" id="promo">
+              </div>
+              <div class="col-sm-5">
+                <div class="card-body">
+                  <h5 class="card-title">Promo Lebaran</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural</p>
+                  <button type="button" class="btn btn-success">Klaim</button>
+                  <p class="card-text"><small class="text-body-secondary">Berlaku Sampai 3 Juli 2023</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+        <!-- Promo -->
+        <h2>Rekomendasi</h2>
+        <!-- Rekomendasi -->
+         <!-- Rekomendasi 1 -->
+  
+<div class="row m-3" id="rekomendasi">
+    <div class="card" id="rekomendasi1" style="width: 18rem;">
+      <img src="product/avanza veloz.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Avanza Veloz</h5>
+        <h5 class="card-title">Rp. 300.000 / Hari</h5>
+        
+        
+        <ul>
+          <li> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Detail
+          </button></li>
+          <li> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            Rental
+          </button></li>
+        </ul>
+        
+
+<!-- Detail -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel"><img src="brand/logo_toyota-removebg-preview.png" alt="">Avanza Veloz</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    <h5>1. Desain Modern</h5> 
+    <p>Desain adalah bagian yang penting dari sebuah mobil, dan beruntungnya, Veloz sudah dilengkapi dengan desain yang cukup modern bahkan untuk varian tahun produksi 2011. Headlamp nya sudah menggunakan LED, dan pada bagian atasnya, ada finishing chrome yang membuat tampilan mobil lebih elegan. Selain itu, desain yang modern ini juga terpancar dari interior yang dihiasi oleh finishing krem, hitam, dan silver.</p>
+
+    <h5>2. Kapasitas Kabin yang Luas</h5>
+    <p>Sebagai mobil MPV yang biasanya digunakan untuk berwisata keluarga, tentu aspek ukuran kabin sangatlah penting disini. Avanza Veloz bekas memiliki kabin yang cukup luas, yang mana bisa menampung anggota keluarga tanpa harus berdesak-desakan. Mobil ini memiliki panjang 4.395 mm, tinggi 1.700 mm, dan lebar 1.730 mm.</p>
+
+    <h5>3. Fitur Lengkap</h5>
+    <p>Selain daripada fitur kenyamanan yang mumpuni, Avanza Veloz juga memiliki fitur keamanan yang lumayan lengkap, mulai dari pengereman ABS, Brake Assist, sampai Electronic Brake-Force Distribution. Dengan menggunakan pengereman yang sudah bersistem ABS, maka mobil akan jarang sekali mengalami selip.
+      Ada juga fitur bernama Pedal Misoperation Control yang mana berfungsi untuk mencegah adanya penginjakan pedal secara tidak sengaja.</p> 
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+        
+<!-- Detail -->
+
+
+<!-- Konfirmasi Rental -->
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Rental Sekarang</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Alamat</span>
+        <textarea name="" id="" cols="43"></textarea>
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Berapa Hari</span>
+        <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">No. HP</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="+62">
+      </div>
+      <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Kode Promo</span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+      <button  id="rental" type="button" class="btn btn-success" data-bs-dismiss="modal">
+        Rental Seakarang
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Konfirmasi Rental -->
+      </div>
+    </div>
+
+<!-- Rekomendasi 2 -->
+<div class="card" id="rekomendasi2" style="width: 18rem;">
+<img src="product/jazz.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Honda Jazz</h5>
+  <h5 class="card-title">Rp. 400.000 / Hari</h5>
+  
+  
+  <ul>
+    <li> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Detail
+    </button></li>
+    <li> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+      Rental
+    </button></li>
+  </ul>
+  
+
+<!-- Detail -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">Detail Tentang Kendaraan Ini</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+test
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+  
+<!-- Detail -->
+
+
+<!-- Konfirmasi Rental -->
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">Rental Sekarang</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Alamat</span>
+  <textarea name="" id="" cols="43"></textarea>
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Berapa Hari</span>
+  <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">No. HP</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="+62">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Kode Promo</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+<button  id="rental" type="button" class="btn btn-success" data-bs-dismiss="modal">
+  Rental Seakarang
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Konfirmasi Rental -->
+</div>
+</div>
+
+<!-- Rekomendasi 3 -->
+
+<div class="card" id="rekomendasi3" style="width: 18rem;">
+<img src="product/vario-removebg-preview.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Vario New 125cc</h5>
+  <h5 class="card-title">Rp. 75.000 / Hari</h5>
+  
+  
+  <ul>
+    <li> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+      Detail
+    </button></li>
+    <li> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+      Rental
+    </button></li>
+  </ul>
+  
+
+<!-- Detail -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">Detail Tentang Kendaraan Ini</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+test
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+  
+<!-- Detail -->
+
+
+<!-- Konfirmasi Rental -->
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">Rental Sekarang</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Alamat</span>
+  <textarea name="" id="" cols="43"></textarea>
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Berapa Hari</span>
+  <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">No. HP</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="+62">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Kode Promo</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+<button  id="rental" type="button" class="btn btn-success" data-bs-dismiss="modal">
+  Rental Seakarang
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Konfirmasi Rental -->
+</div>
+</div>
+
+
+<!-- Rekomendasi 4 -->
+
+<div class="card" id="rekomendasi4" style="width: 18rem;">
+<img src="product/nmax-removebg-preview.png" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Yamaha Nmax</h5>
+  <h5 class="card-title">Rp. 140.000 / Hari</h5>
+  
+  
+  <ul>
+    <li> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+      Detail
+    </button></li>
+    <li> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+      Rental
+    </button></li>
+  </ul>
+  
+
+<!-- Detail -->
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">Detail Tentang Kendaraan Ini</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+test
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+  
+<!-- Detail -->
+
+
+<!-- Konfirmasi Rental -->
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">Rental Sekarang</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Alamat</span>
+  <textarea name="" id="" cols="43"></textarea>
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Berapa Hari</span>
+  <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">No. HP</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="+62">
+</div>
+<div class="input-group input-group-sm mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-sm">Kode Promo</span>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+<button  id="rental" type="button" class="btn btn-success" data-bs-dismiss="modal">
+  Rental Seakarang
+</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Konfirmasi Rental -->
+</div>
+</div>
+
+
+</div>
+        <!-- Rekomendasi -->
+        <!-- Footer -->
+        <footer class="footer-home">
+            <div class="card text-center">
+              <div class="card-header">
+                <img src="assets/logo 1.png" alt="" />
+                <h4>Focalors Rent</h4>
+              </div>
+              <div class="card-body" id="tentang">
+                <h5 class="card-title">Tentang Aplikasi</h5>
+                <a href="about.html" class="btn btn-primary">About Us</a>
+              </div>
+              <div class="card-footer text-body-secondary">
+                Find us on :
+            
+                  <ul>
+                  <li>
+                    <a class="nav-link" href="#"
+                    ><i class="fa-brands fa-square-facebook"></i
+                      >Facebook</a>
+                    </li>
+                  <li>
+                    <a class="nav-link" href="https://instagram.com/lonedriftss?igshid=OGQ5ZDc2ODk2ZA=="
+                      ><i class="fa-brands fa-instagram"></i
+                        >Instagram</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#"
+                    ><i class="fa-brands fa-youtube"></i
+                      >Youtube</a>
+                    </li>
+                  </ul>
+              
+              </div>
+            </div>
+          </footer>
+        <!-- Footer -->
+    </div>
+  </body>
+</html>
